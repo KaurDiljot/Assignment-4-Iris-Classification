@@ -19,7 +19,7 @@ The CSV file (iris.csv) was uploaded to Azure Blob Storage, serving as the sourc
 Using Azure Data Factory, a pipeline was created to transfer the data from Azure Blob Storage to Azure SQL Database. A table named `iris_data` was created in the database to store the dataset.
 
 ### Data Processing and Model Training
-The data was loaded from the Azure SQL Database into a Pandas DataFrame for preprocessing. A Support Vector Machine (SVM) classifier was trained using Scikit-learn, achieving high accuracy.
+The data was loaded from the Azure SQL Database into a Pandas DataFrame for preprocessing. A Support Vector Machine (SVM) classifier was trained using Scikit-learn, achieving high accuracy. Hyperparameter tuning with GridSearchCV showed minor misclassification between Versicolor and Virginica.
 
 ### Data Visualization
 The results were visualized using Power BI, including a confusion matrix and pair plots.
@@ -71,11 +71,14 @@ The results were visualized using Power BI, including a confusion matrix and pai
 
 ### Data Visualization in Power BI:
 1. Load the data from Azure SQL Database into Power BI.
-2. Create visualizations such as scatter plots, pair plots, and confusion matrix.
+2. - Scatter plots to visualize the relationships between features (petal length, petal width, sepal length, sepal width) and the target variable.
+- A pair plot to show the pairwise relationships between features.
+- A pie chart to show the distribution of the target classes.
 
 ### Results
 - The SVM model achieved high accuracy in classifying the iris species.
-- Visualizations in Power BI provided insights into the model's performance and the relationships between features.
+- Hyperparameter Tuning with GridSearchCV showed minor misclassification between versicolor and virginica.
+- Visualizations in Power BI provided insights into the relationships between features.
 
 ### Challenges
 - Configuring data ingestion in Azure Data Factory.
