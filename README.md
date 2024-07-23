@@ -71,7 +71,7 @@ The results were visualized using Power BI, including a confusion matrix and pai
 
 ### Data Visualization in Power BI:
 1. Load the data from Azure SQL Database into Power BI.
-2. - Scatter plots to visualize the relationships between features (petal length, petal width, sepal length, sepal width) and the target variable.
+- Scatter plots to visualize the relationships between features (petal length, petal width, sepal length, sepal width) and the target variable.
 - A pair plot to show the pairwise relationships between features.
 - A pie chart to show the distribution of the target classes.
 
